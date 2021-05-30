@@ -1,0 +1,13 @@
+{{>header}}
+<h2>restaurar a Senha</h2>
+
+<form method="POST">
+    <label>
+    <input type="email" name="email" />
+    </label>
+    <br/><br/>
+
+    <label>
+    <input type="submit" name="Redefinir Senha"/>
+    </label>
+</form>

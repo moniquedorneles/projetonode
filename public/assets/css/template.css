@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap');
+body {
+font-family: 'Roboto', sans-serif;
+font-size:15px;
+background-color:#fff;
+margin:0;
+}
+header {
+background-color:#39aae1;
+padding:10px;
+border-bottom:1px solid #888;
+}
+header h1 {
+text-align:center;
+}
+a {
+color:#555;
+text-decoration:none;
+}
+a:hover {
+text-decoration:underline;
+}
+ul, li {
+margin:0;
+padding:0;
+list-style:none;
+}
+ul {
+display:flex;
+justify-content:center;
+align-items:center;
+}
+li {
+padding:10px;
+text-transform: uppercase;
+}
+.warning {
+border:2px solid #2b4c99;
+background-color:#0614dd;
+color:#FFF;
+padding:10px 20px;
+border-radius:5px;
+}
+.post {
+width:300px;
+display:inline-block;
+box-shadow:0px 0px 5px #0614dd;
+background-color: #c6e2ff;
+padding:10px;
+margin:20px;
+border-radius:5px;
+overflow:hidden;
+}
+.post img {
+max-width: 100%;
+}
+form {
+margin:20px;
+}
+label {
+display:inline-block;
+margin:5px 0;
+}
+input, textarea {
+display:block;
+padding:10px 15px;
+border:2px solid #CCC;
+font-size:16px;
+outline:0;
+resize:none;
+margin-top:10px;
+width:400px;
+}
+textarea {
+height:200px;
+}
+input[type=submit]:hover {
+background-color:#EFEFEF;
+cursor:pointer;
+}
+.tags {
+display:flex;
+justify-content: center;
+align-items:center;
+margin-top:10px;
+}
+.tags .tag {
+padding:10px;
+}
+.tag.selected a {
+color:#FF0000;
+}

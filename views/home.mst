@@ -1,0 +1,32 @@
+{{>header}}
+<h1>Seja Bem Vindo(a)</h1>
+<p>Posts</p>
+
+<div class="tags">
+    {{#tags}}
+        <div class="tag {{class}}"><a href="/?t={{_id}}">{{_id}} ({{count}})</a></div>
+    {{/tags}}
+</div>
+
+{{#posts}}
+    <div class="post">
+        {{#photo}}
+        <img src="/media/{{photo}}"/>
+        {{/photo}}
+        <h3><a href="/post/{{slug}}">{{title}}</a></h3>
+        <p>{{body}}</p>
+        <p>Autor: {{author.name}}</p>
+        
+        {{#user}}
+        <a href="/post/{{slug}}/edit">[Editar]</a>
+        {{/user}}
+
+        {{#user}}
+        <a href="/post/{{slug}}/delete"> [Excluir]</a>
+        {{/user}}
+    </div>
+{{/posts}}
+
+
+
+
